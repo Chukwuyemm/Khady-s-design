@@ -485,12 +485,12 @@ nav {
 .cart-btn {
   width: 100px;
   height: 100px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: none;
   background: rgb(214, 31, 27);
   color: #fff;
   cursor: pointer;
-  margin-left: 20rem
+  margin-left: 40rem
  
   
 }
