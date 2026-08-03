@@ -494,6 +494,13 @@ nav {
  
   
 }
+
+.products{
+  margin-left: 1rem;
+}
+.accent{
+  color: #c40000;
+}
 .product-card.highlight .cart-btn {
   background: #fff;
 
@@ -502,4 +509,12 @@ nav {
 .product-card{
   background-color: rgb(252, 240, 240);
   border-radius: 10px;
+}
+
+.product-card:hover{
+   transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(198, 40, 40, 0.18);
+  border: none;
+  outline: none;
+  background-color: rgb(201, 33, 32);
 }
