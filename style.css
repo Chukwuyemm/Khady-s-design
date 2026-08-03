@@ -490,13 +490,14 @@ nav {
   background: rgb(214, 31, 27);
   color: #fff;
   cursor: pointer;
-  margin-left: 40rem
+  margin-left: 35rem;
  
   
 }
 
 .products{
-  margin-left: 1rem;
+  margin-left: 0rem;
+  padding: 1rem;
 }
 .accent{
   color: #c40000;
@@ -505,10 +506,15 @@ nav {
   background: #fff;
 
 }
+.product-grid{
+  
+}
 
 .product-card{
   background-color: rgb(252, 240, 240);
   border-radius: 10px;
+
+  width: 470px;
 }
 
 .product-card:hover{
