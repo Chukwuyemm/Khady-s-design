@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -169,13 +170,18 @@ nav {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 2px;
+  /* background-color: #f5a623; */
 }
 
 .enjoy p {
   color: rgb(181, 15, 15);
-
-  display: inline-block;
+ padding: 1rem;
+  display: block;
   line-height: 1;
+  align-items: center;
+  width: auto;
+  padding-left: 0rem;
+  /* background-color: #c40000; */
 }
 
 .enjoy-text {
@@ -337,6 +343,7 @@ nav {
   margin-top: 2rem;
   border-radius: 40px;
   margin-left: 4rem;
+
 }
 
 .burger-container img {
@@ -345,7 +352,7 @@ nav {
   background: none;
   padding: -3000rem;
   position: relative;
-  top: -6rem;
+  top: -7rem;
   right: 19rem;
 }
 
@@ -357,7 +364,7 @@ nav {
   justify-content: center;
   align-items: flex-start;
   width: 220px;
-  margin-left: 8rem;
+  margin-left: 3rem;
   margin-top: -2rem;
 }
 
@@ -389,22 +396,52 @@ nav {
   display: grid;
   grid-template-columns: 1.6fr 1fr;
   gap: 24px;
-
+  margin-top: 2rem;
+ 
 
 }
 
 .promo-chicken{
+  position: relative;
+  overflow: hidden;
   margin-left: 1rem;
-  background-image: url("./kiberstalker-food-8341388_1920.jpg");
+  background-image: url("./assets/images//kiberstalker-food-8341388_1920-removebg-preview.png");
   height: 30rem;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+
+  
 }
 
+.promo-chicken::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.promo-chicken > * {
+  position: relative;
+  z-index: 1;}
+  
+.promo-chicken h3{
+  color: #ececec;
+  margin-left: 2rem;
+  
+
+}
+
+.sub{
+  color: #ececec;
+}
 .pizza{
+ position: relative;
+  overflow: hidden;
   margin-right: 1rem;
-  background-image: url(./engin_akyurt-pizza-5661748_1920.jpg);
+  background-image: url(./assets/images/engin_akyurt-pizza-5661748_1920.jpg);
   height: 15rem;
   width:auto;
    background-size: cover;
@@ -412,15 +449,36 @@ nav {
   border-radius: 10px;
 }
 
+.pizza::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+
 .promo-pasta{
+  position: relative;
+  overflow: hidden;
   margin-right: 1rem;
-  background-image: url(./yuusuke111-pasta-3150916_1920.jpg);
+  background-image: url(./assets/images/yuusuke111-pasta-3150916_1920.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 1rem;
   height: 15rem;
   width: auto;
   border-radius: 10px;
+}
+
+.promo-pasta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
+  border-radius: inherit;
+  z-index: 0;
 }
 
 .section-head {
@@ -441,6 +499,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-left: 1rem;
 }
 .product-card {
   position: relative;
@@ -448,6 +507,7 @@ nav {
   border-radius: var(--radius-md);
   padding: 20px;
   text-align: left;
+  
 }
 .product-card.highlight { background: var(--red); color: #fff; }
 .product-card img {
@@ -487,7 +547,6 @@ nav {
   height: 100px;
   border-radius: 4px;
   border: none;
-  background: rgb(214, 31, 27);
   color: #fff;
   cursor: pointer;
   margin-left: 35rem;
@@ -507,14 +566,15 @@ nav {
 
 }
 .product-grid{
-  
+
+
 }
 
 .product-card{
   background-color: rgb(252, 240, 240);
   border-radius: 10px;
+  width: 370px;
 
-  width: 470px;
 }
 
 .product-card:hover{
@@ -522,5 +582,161 @@ nav {
   box-shadow: 0 12px 28px rgba(198, 40, 40, 0.18);
   border: none;
   outline: none;
+  color: #ececec;
   background-color: rgb(201, 33, 32);
+  transition-delay: 30ms;
+  transition-duration: 2s;
+}
+
+
+
+
+.experience{
+  margin-left: 42rem;
+  font-size: large;
+  
+  
+
+}
+
+.experience-header h3{
+  color: rgb(189, 15, 17);
+  font-size: 15px;
+
+
+}
+
+.stories h2{
+  font-size: 45px;
+  font-weight: 100rem;
+  
+}
+
+.stories span{
+  color: rgb(189, 15, 17);
+}
+
+.stories p{
+  font-weight: 100;
+}
+
+.experience-card{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  margin-left: 3.5rem;
+  border-radius: 16px;
+  width: 220px;
+  height: auto;
+  gap: 3rem;
+}
+
+.fonts{
+  font-weight: 500px;
+  font-size: 20px;
+  color: rgb(163, 63, 65);
+  margin-bottom: 3px;
+  
+}
+
+.e-card{
+  background-color: rgb(255, 241, 241);
+  border-radius: 10px;
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); */
+  border: none;
+  outline: none;
+  padding: 15px;
+  
+  
+}
+
+.e-card p{
+  font-size: 15px;
+}
+
+.popular{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.popular-card{
+  display: flex;
+  /* position: relative; */
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  color: #c40000;
+  margin-top: 2rem;
+  gap: 3px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); */
+  outline: rgba(0, 0, 0, 0.12);
+  border:  2px solid rgb(241, 241, 243);
+  /* background: #fff; */
+
+}
+
+.popular-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 14px;
+}
+
+.popular-card:hover{
+   transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(198, 40, 40, 0.18);
+  border: none;
+  outline: none;
+  color: #ececec;
+  background-color: rgb(201, 33, 32);
+  transition-delay: 30ms;
+  transition-duration: 2s;
+  border-radius: 5px;
+
+}
+
+.popular-card p{
+  margin-bottom: 3px;
+  font-size: large;
+}
+
+.price-row {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* margin-top: 6px; */
+}
+
+.price {
+  font-weight: 700;
+  color: #c40000;
+}
+
+.cart-butn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #c40000;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px){
+  body{
+   background-color: #f5a623;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    background-color: #c40000;
+  }
 }

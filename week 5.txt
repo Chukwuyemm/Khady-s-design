@@ -1,0 +1,14 @@
+mobile responsiveness 
+it starts with media query
+which is 
+@media screen and (max-width: 300px){
+
+}
+
+it is divided into two 
+mobile first approach 
+and desktop first approach
+
+
+------------ Tablet devices------------
+@media screen and (max width: 300px)
