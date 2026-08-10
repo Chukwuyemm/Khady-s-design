@@ -12,3 +12,15 @@ and desktop first approach
 
 ------------ Tablet devices------------
 @media screen and (max width: 300px)
+
+
+for the header always use min height:100vh
+
+a stands for opacity iranges from 0-1
+
+margin auto 
+margin top 10%
+width 50%
+
+in a variable name there should be two dashes
+ eg-- primary-color;
